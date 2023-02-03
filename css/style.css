@@ -40,6 +40,17 @@ body {
   flex-direction: column;
 }
 
+.input-field {
+  position: fixed;
+}
+
+ul {
+  display: none;
+  position: relative;
+  top: 30px;
+  width: 250px;
+}
+
 .list-part {
   display: flex;
   justify-content: center;

@@ -47,9 +47,17 @@ body{
     color: map-get($colors , text );
     @include flex;
 }
-// .input-field{
-    
-// }
+.input-field{
+    position:fixed;
+}
+ul{
+    display: none;
+    // margin-top: 10px;
+    position: relative;
+    top: 30px;
+    // border: 1px solid black;
+    width: 250px;
+}
 .list-part{
     @include flex;
     margin-top: -22px;
