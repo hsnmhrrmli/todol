@@ -16,7 +16,7 @@ $colors: (
 );
 $fonts:(
     "bold":900,
-    "med":500,
+    "mid":500,
     "fontSizeLi":15px,
     "fontFamily":'garamond'
 );
@@ -31,4 +31,12 @@ body{
     font-family: map-get($fonts , fontFamily );
     width: 300px;
     height: 300px;
+}
+.top{
+    @include border;
+    border-bottom-left-radius:0;
+    border-bottom-right-radius:0;
+    background-color: map-get($colors, heading);
+    width: 300px;
+    height: 25px;
 }
