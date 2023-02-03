@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 @mixin border{
     border: 1px solid black;
@@ -46,6 +47,9 @@ body{
     color: map-get($colors , text );
     @include flex;
 }
+// .input-field{
+    
+// }
 .list-part{
     @include flex;
     margin-top: -22px;
