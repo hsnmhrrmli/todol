@@ -22,11 +22,11 @@ $fonts:(
 );
 
 body{
+    @include flex;
     width: 100vw;
     height: 100vh;
 }
 .main{
-    @include flex;
     @include border;
     font-family: map-get($fonts , fontFamily );
     width: 300px;
