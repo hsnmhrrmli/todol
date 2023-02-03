@@ -18,7 +18,7 @@ body {
   border-radius: 25px;
   font-family: "garamond";
   width: 500px;
-  height: 400px;
+  height: 300px;
 }
 
 .top {
@@ -41,17 +41,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -22px;
   height: 100%;
 }
 .list-part #text {
   border-radius: 8px;
   border: 1px solid black;
-  border-radius: 25px;
   outline: none;
-  font-size: 25px;
+  font-size: 29px;
+  padding-left: 9px;
 }
-.list-part #close {
+.list-part #add {
+  font-size: 29px;
   border-radius: 50%;
-  width: 18px;
+  width: 37px;
+  margin-left: 5px;
   outline: none;
 }/*# sourceMappingURL=style.css.map */

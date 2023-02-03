@@ -18,7 +18,7 @@ $colors: (
 $fonts:(
     "bold":700,
     "mid":500,
-    "fontSizeLi":25px,
+    "fontSizeLi":29px,
     "fontSizeH":31px,
     "fontFamily":'garamond'
 );
@@ -32,7 +32,7 @@ body{
     @include border;
     font-family: map-get($fonts , fontFamily );
     width: 500px;
-    height: 400px;
+    height: 300px;
 }
 .top{
     @include border;
@@ -48,16 +48,21 @@ body{
 }
 .list-part{
     @include flex;
+    margin-top: -22px;
     height: 100%;
     #text{
+        // @include border;
         border-radius: 8px;
-        @include border;
+        border: 1px solid black;
         outline: none;
         font-size: map-get($fonts , fontSizeLi );
+        padding-left: 9px;
     }
-    #close{
+    #add{
+        font-size: map-get($fonts , fontSizeLi );
         border-radius: 50%;
-        width: 18px;
+        width: 37px;
+        margin-left: 5px;
         outline:none;
     }
 }
