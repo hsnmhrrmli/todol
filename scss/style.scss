@@ -16,9 +16,10 @@ $colors: (
     "text": white,
 );
 $fonts:(
-    "bold":900,
+    "bold":700,
     "mid":500,
-    "fontSizeLi":15px,
+    "fontSizeLi":25px,
+    "fontSizeH":31px,
     "fontFamily":'garamond'
 );
 
@@ -30,16 +31,33 @@ body{
 .main{
     @include border;
     font-family: map-get($fonts , fontFamily );
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 400px;
 }
 .top{
     @include border;
     border-bottom-left-radius:0;
     border-bottom-right-radius:0;
     background-color: map-get($colors, heading);
-    width: 300px;
-    height: 25px;
+    width: 500px;
+    height: 43px;
+    font-size: map-get($fonts, fontSizeH );
+    font-weight: map-get($fonts, bold );
     color: map-get($colors , text );
     @include flex;
+}
+.list-part{
+    @include flex;
+    height: 100%;
+    #text{
+        border-radius: 8px;
+        @include border;
+        outline: none;
+        font-size: map-get($fonts , fontSizeLi );
+    }
+    #close{
+        border-radius: 50%;
+        width: 18px;
+        outline:none;
+    }
 }
