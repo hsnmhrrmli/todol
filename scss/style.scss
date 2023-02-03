@@ -12,7 +12,8 @@
 
 }
 $colors: (
-    "heading":black
+    "heading":black,
+    "text": white,
 );
 $fonts:(
     "bold":900,
@@ -39,4 +40,6 @@ body{
     background-color: map-get($colors, heading);
     width: 300px;
     height: 25px;
+    color: map-get($colors , text );
+    @include flex;
 }
